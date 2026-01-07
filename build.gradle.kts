@@ -5,9 +5,8 @@ plugins {
     alias(libs.plugins.composeCompiler)
 }
 
-group = "com.chaosnote"
-
-version = "1.0"
+group = "com.github.chaosnoteapp"
+version = "0.1.0"
 
 repositories {
     mavenLocal()
@@ -29,10 +28,7 @@ kotlin {
 
 publishing {
     publications {
-        create<MavenPublication>("mavenJava") {
-            groupId = "com.chaosnote"
-            artifactId = "api"
-            version = "1.0"
+        create<MavenPublication>("maven") {
             from(components["java"])
         }
     }
