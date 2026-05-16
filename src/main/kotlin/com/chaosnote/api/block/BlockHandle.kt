@@ -4,6 +4,6 @@ interface BlockHandle {
     val id: String
     val payload: String
     fun update(value: String)
-    fun saveState(state: Object)
-    fun getState(): Object?
+    fun saveState(state: Any)
+    fun getState(): Any?
 }
